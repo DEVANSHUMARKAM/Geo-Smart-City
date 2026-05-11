@@ -1,0 +1,103 @@
+/* Base — transparent until scrolled */
+.gs-navbar {
+  border-bottom: 1px solid transparent;
+  transition: background 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease;
+  padding: 0;
+  min-height: 68px;
+}
+
+/* Glass effect on scroll */
+.gs-navbar--scrolled {
+  background: rgba(8, 13, 19, 0.75) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom-color: rgba(0, 217, 232, 0.15);
+}
+
+/* Logo */
+.gs-navbar__logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.gs-navbar__logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00d9e8, #007acc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #080d13;
+  box-shadow: 0 0 14px rgba(0, 217, 232, 0.3);
+  flex-shrink: 0;
+}
+
+.gs-navbar__logo-dot { color: #00d9e8; }
+
+/* Nav links */
+.gs-navbar__link {
+  color: #7a8a99 !important;
+  font-size: 0.88rem;
+  position: relative;
+  padding-bottom: 4px !important;
+}
+
+.gs-navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0.5rem;
+  width: 0; height: 1px;
+  background: #00d9e8;
+  transition: width 0.25s ease;
+}
+
+.gs-navbar__link:hover { color: #e0f7fa !important; }
+.gs-navbar__link:hover::after { width: calc(100% - 1rem); }
+
+/* CTA button — overrides Bootstrap's .btn */
+.gs-navbar__cta {
+  background: #00d9e8 !important;
+  border: none !important;
+  color: #080d13 !important;
+  font-size: 0.87rem;
+  font-weight: 700;
+  border-radius: 7px !important;
+  padding: 0.48rem 1.2rem !important;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s !important;
+}
+
+.gs-navbar__cta:hover {
+  background: #19eef9 !important;
+  box-shadow: 0 0 22px rgba(0, 217, 232, 0.4) !important;
+  transform: translateY(-1px);
+  color: #080d13 !important;
+}
+
+.gs-navbar__cta svg { transition: transform 0.2s; }
+.gs-navbar__cta:hover svg { transform: translateX(3px); }
+
+/* Hamburger (Bootstrap's toggle — just recolor) */
+.gs-navbar__toggle {
+  filter: invert(1);
+  opacity: 0.6;
+}
+
+.gs-navbar__toggle:focus { box-shadow: none !important; }
+
+/* Mobile: stack links nicely */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(8, 13, 19, 0.97);
+    padding: 1rem 1.5rem 1.5rem;
+    border-top: 1px solid rgba(0, 217, 232, 0.1);
+    margin-top: 0.5rem;
+  }
+
+  .gs-navbar__cta {
+    margin-top: 0.75rem;
+    justify-content: center;
+  }
+}

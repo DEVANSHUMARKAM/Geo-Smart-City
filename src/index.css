@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bs-body-bg: #080d13;
+  /* ← add this */
+  --bs-body-color: #f0f4f8;
+  --cyan: #00d9e8;
+  --cyan-glow: rgba(0, 217, 232, 0.25);
+  --bg: #080d13;
+  --bg-2: #0d1520;
+  --text: #f0f4f8;
+  --text-muted: #6b8090;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-cyan: rgba(0, 217, 232, 0.15);
+  --green: #00e5a0;
+  --blue: #00b4ff;
+  --orange: #ff6b35;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 22, 29, 0.82);   /* tweak opacity to show more/less image */
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+
+  background-image: url('/src/assets/earth-black.jpg');  /* ← your filename */
+  background-attachment: fixed;    /* image stays still while page scrolls */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--cyan-glow);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-cyan);
+  border-radius: 10px;
+}
