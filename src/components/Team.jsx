@@ -2,10 +2,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 import './Team.css'
 
 // Add your passport photos to src/assets/ and update these imports
-import photoKhandare   from '../assets/dev-sign.jpg'
-import photoDevanshu   from '../assets/dev-sign.jpg'
-import photoDivyanshu  from '../assets/dev-sign.jpg'
-import photoAyush      from '../assets/dev-sign.jpg'
+import photoKhandare   from '../assets/ASSK.jpeg'
+import photoDevanshu   from '../assets/devphotonew.png'
+import photoDivyanshu  from '../assets/divyanshu.jpeg'
+import photoAyush      from '../assets/ayush.jpeg'
 
 const GUIDE = {
   name: 'Shri Srinivas Khandare',
@@ -35,7 +35,7 @@ const TEAM = [
     name: 'Ayush Chandekar',
     role: 'Frontend Developer and Data Engineer',
     photo: photoAyush,
-    skills: ['React', 'Bootstrap', 'CSS Animations', 'Figma'],
+    skills: ['React', 'Bootstrap', 'CSS Animations', 'Tailwind CSS'],
     color: '#ff6b35',
   },
 ]

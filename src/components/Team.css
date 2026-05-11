@@ -20,7 +20,7 @@
 }
 
 .team__title {
-  font-family: 'Syne', sans-serif;
+  font-family: segoe-ui, sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 700;
   color: #f0f4f8;
@@ -112,7 +112,7 @@
 }
 
 .guide-card__name {
-  font-family: 'Syne', sans-serif;
+  font-family: Times New Roman, serif;
   font-size: 1.45rem;
   font-weight: 700;
   color: #eef2f5;
@@ -231,8 +231,8 @@
 .member-card__info { margin-bottom: 1.25rem; }
 
 .member-card__name {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.05rem;
+  font-family: Times New Roman, serif;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #eef2f5;
   margin-bottom: 0.3rem;

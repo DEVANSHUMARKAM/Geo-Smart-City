@@ -11,7 +11,7 @@ const MODULES = [
     id: '01',
     tag: "Forecast Tomorrow's City",
     title: 'UrbanGrowth',
-    desc: 'We model decades of historical satellite imagery using mathematical algorithms to predict where Nagpur will expand next — guiding planners, infrastructure and zoning decisions.',
+    desc: 'Utilizes all historical satellite imagery using mathematical algorithms to predict where Nagpur will expand next — guiding planners, infrastructure and zoning decisions.',
     cta: 'Open module',
     url: 'https://urban-cast.vercel.app/',   // ← replace with your deployed URL
     image: imgUrbanGrowth,
@@ -25,7 +25,7 @@ const MODULES = [
     title: 'CrimeOps',
     desc: 'Analyze every historical crime in Nagpur using DBSCAN spatial clustering to recommend optimal placement of patrol routes, kobans and surveillance cameras.',
     cta: 'Open module',
-    url: 'https://crimeops-frontend.onrender.com/',       // ← replace with your deployed URL
+    url: 'https://crimeops.onrender.com',       // ← replace with your deployed URL
     image: imgCrimeOps,
     color: '#00b4ff',
     gradient: 'linear-gradient(160deg, #0d3a6b 0%, #091f45 100%)',
@@ -55,7 +55,7 @@ const Modules = () => {
           <span className="modules__eyebrow">The Suite</span>
           <h2 className="modules__title">Three modules. One mission.</h2>
           <p className="modules__sub">
-            Each module is independent, production-ready, and color-coded by its civic
+            Each module is independent, production-ready, and data driven by its civic
             mission — growth, safety, and accountability. Click on any card to explore the live module and see how it can help Nagpur become a smarter, safer, and more sustainable city. 
             Get ready to dive into the data and discover insights that can transform urban life in Nagpur!  
           </p>
